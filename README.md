@@ -116,14 +116,55 @@ Paste a sample of your recommender's output here as a text block so a reader can
 
 ## Experiments You Tried
 
-Use this section to document the experiments you ran. For example:
+Profile 1: High-Energy Pop
+--------------------------
+1. Sunrise City (Score: 3.92)
+   Reasons: genre match (+1.5), mood match (+1.5), energy closeness (+0.92)
+2. Gym Hero (Score: 2.47)
+   Reasons: genre match (+1.5), energy closeness (+0.97)
+3. Rooftop Lights (Score: 2.36)
+   Reasons: mood match (+1.5), energy closeness (+0.86)
+4. Storm Runner (Score: 0.99)
+   Reasons: energy closeness (+0.99)
+5. Golden Steps (Score: 0.96)
+   Reasons: energy closeness (+0.96)
 
-- What happened when you changed the weight on genre from 2.0 to 0.5
-- What happened when you added tempo or valence to the score
-- How did your system behave for different types of users
+Profile 2: Chill Lofi
+---------------------
+1. Library Rain (Score: 3.85)
+   Reasons: genre match (+1.5), mood match (+1.5), energy closeness (+0.85)
+2. Midnight Coding (Score: 3.78)
+   Reasons: genre match (+1.5), mood match (+1.5), energy closeness (+0.78)
+3. Spacewalk Thoughts (Score: 2.42)
+   Reasons: mood match (+1.5), energy closeness (+0.92)
+4. Focus Flow (Score: 2.30)
+   Reasons: genre match (+1.5), energy closeness (+0.80)
+5. Winter Glass (Score: 0.98)
+   Reasons: energy closeness (+0.98)
+
+
+I changed the genre points from 1.5 to 0.75 and increased the energy points from 1 to 2. I kept the mood points at 1.5.
+
+I wanted to see whether giving more importance to energy would change which songs were recommended.
+Profile 3: Deep Intense Rock
+----------------------------
+1. Storm Runner (Score: 3.94)
+   Reasons: genre match (+1.5), mood match (+1.5), energy closeness (+0.94)
+2. Gym Hero (Score: 2.42)
+   Reasons: mood match (+1.5), energy closeness (+0.92)
+3. Golden Steps (Score: 0.99)
+   Reasons: energy closeness (+0.99)
+4. Sunrise City (Score: 0.97)
+   Reasons: energy closeness (+0.97)
+5. Rooftop Lights (Score: 0.91)
+   Reasons: energy closeness (+0.91)
 
 ---
+Step 2: Accuracy and Surprises
 
+I tested different music preferences to see if the recommendations made sense. The program gave songs higher scores when their genre, mood, and energy matched the user's preferences.
+
+One thing I noticed is that some songs were recommended even when their genre didn't match. This happened because they still received points for mood or energy. I learned that the scoring system can recommend songs outside the user's favorite genre
 ## Limitations and Risks
 
 Summarize some limitations of your recommender.

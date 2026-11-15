@@ -13,21 +13,35 @@ from src.recommender import load_songs, recommend_songs
 
 
 def main() -> None:
-    songs = load_songs("data/songs.csv") 
+    songs = load_songs("data/songs.csv")
     print(f"Loaded songs: {len(songs)}")
-    # My music taste profile
-    user_prefs = {
-        "genre": "pop",
-        "mood": "happy",
-        "energy": 0.8
+
+    profiles = {
+        "Profile 1: High-Energy Pop": {
+            "genre": "pop",
+            "mood": "happy",
+            "energy": 0.9,
+        },
+        "Profile 2: Chill Lofi": {
+            "genre": "lofi",
+            "mood": "chill",
+            "energy": 0.2,
+        },
+        "Profile 3: Deep Intense Rock": {
+            "genre": "rock",
+            "mood": "intense",
+            "energy": 0.85,
+        },
     }
 
-    recommendations = recommend_songs(user_prefs, songs, k=5)
+    for profile_name, user_prefs in profiles.items():
+        recommendations = recommend_songs(user_prefs, songs, k=5)
 
-    print("\nTop recommendations:\n")
-    for rank, (song, score, explanation) in enumerate(recommendations, start=1):
-        print(f"{rank}. {song['title']} (Score: {score:.2f})")
-        print(f"   Reasons: {explanation}")
+        print(f"\n{profile_name}")
+        print("-" * len(profile_name))
+        for rank, (song, score, explanation) in enumerate(recommendations, start=1):
+            print(f"{rank}. {song['title']} (Score: {score:.2f})")
+            print(f"   Reasons: {explanation}")
 
 
 if __name__ == "__main__":
