@@ -17,19 +17,47 @@ Replace this paragraph with your own summary of what your version does.
 
 ## How The System Works
 
-Explain your design in plain language.
+Music apps like Spotify and YouTube recommend songs based on what people like, listen to, or skip. They also look at what similar users enjoy and the type of songs a person likes. My music recommender will focus on finding songs that match the user's favorite genre, mood, and energy level. Songs that match more preferences will be recommended first.
 
-Some prompts to answer:
+Song Features
 
-- What features does each `Song` use in your system
-  - For example: genre, mood, energy, tempo
-- What information does your `UserProfile` store
-- How does your `Recommender` compute a score for each song
-- How do you choose which songs to recommend
+Title: Name of the song
+Artist: Who sings the song
+Genre: Type of music, like pop or rock
+Mood: How the song feels, like happy or sad
+Energy: Whether the song is calm or energetic
+Tempo: How fast or slow the song is
 
-You can include a simple diagram or bullet list if helpful.
+UserProfile Features
+
+Favorite genre: Type of music the user likes
+Preferred mood: Mood the user enjoys
+
+Preferred energy: Whether the user likes calm or energetic songs
+
+Preferred tempo: Whether the user prefers fast or slow songs
+
+How Recommendations Work
+
+My program will compare the user's preferences with each song. The more features that match, the higher the song's score will be. Songs with the highest scores will be recommended first.
 
 ---
+My Algorithm Recipe
+
+My music recommender will give points to songs based on how well they match the user's music taste.
+
+Genre: Add 1.5 points if the genre matches.
+
+Mood: Add 1.5 points if the mood matches.
+
+Energy: Add up to 1 point depending on how close the song's energy is to the user's preferred energy.
+
+The program will add the points together. Songs with higher scores will be recommended first.
+
+
+Possible Biases
+
+My music recommender might recommend too many songs from the user's favorite genre and miss good songs from other genres. It also only looks at a few features, so it might not always understand what the user really likes.
 
 ## Getting Started
 
@@ -70,16 +98,19 @@ You can add more tests in `tests/test_recommender.py`.
 
 Paste a sample of your recommender's output here as a text block so a reader can see what it produces:
 
-```
-# e.g.:
-# User profile: genre=indie, mood=chill, energy=low
-# Recommendations:
-#   1. ...
-#   2. ...
-#   3. ...
-```
 
-**Screenshot or video** *(optional)*: <!-- Insert a screenshot or demo video link here -->
+2. Rooftop Lights (Score: 2.46)
+   Reasons: mood match (+1.5), energy closeness (+0.96)
+
+3. Gym Hero (Score: 2.37)
+   Reasons: genre match (+1.5), energy closeness (+0.87)
+
+4. Night Drive Loop (Score: 0.95)
+   Reasons: energy closeness (+0.95)
+
+5. Golden Steps (Score: 0.94)
+   Reasons: energy closeness (+0.94)
+
 
 ---
 
