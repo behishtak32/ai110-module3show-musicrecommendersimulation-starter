@@ -5,7 +5,8 @@
 ## 1. Model Name
 
 **MusicMatch 1.0**
-
+My music recommender helps users find the top five songs that match their favorite genre, mood, and energy level.
+This system should not be used as a professional music recommendation service because it has a small dataset and does not learn from real users' listening habits.
 ## 2. Intended Use
 
 My music recommender helps users find songs based on their favorite genre, mood, and energy level. It assumes users know what type of music they like. This project is mainly for classroom learning, not a real music streaming app.
@@ -36,5 +37,4 @@ When I compared High-Energy Pop and Chill Lofi, I noticed that they recommended 
 In the future, I would add more songs and genres. I would also include tempo, favorite artists, and listening history to improve the recommendations. I would like the program to learn from songs users like or skip.
 
 ## 9. Personal Reflection
-
-I learned how music recommendation systems use data to predict what users might enjoy. I found it interesting that changing the scoring points can change which songs are recommended. This project helped me understand how apps like Spotify and YouTube suggest music based on user preferences.
+I learned how music recommendation systems use data to suggest songs based on what users like. My biggest learning moment was understanding how changing the scoring points could change the recommendations. Using AI tools helped me write the code and understand how the program works. However, I still needed to run the program and check for errors. I was surprised that a simple scoring system could recommend songs in a way that feels similar to real music apps. If I continued this project, I would add more songs and improve the recommendations based on users' listening habits.
