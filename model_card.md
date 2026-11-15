@@ -30,6 +30,7 @@ My music recommender has only 18 songs, so there are not enough choices for ever
 
 I tested my music recommender with three different profiles: High-Energy Pop, Chill Lofi, and Deep Intense Rock. I checked the top five songs for each profile to see whether they matched the user's music taste. The High-Energy Pop profile looks for happy pop songs with high energy, while Chill Lofi looks for calmer music. Deep Intense Rock looks for intense rock songs with higher energy. These profiles helped me see how different preferences affect the recommendations.
 I also tested changing the scoring weights. I reduced genre points from 1.5 to 0.75 and increased energy points from 1 to 2. This made energy more important than genre in the scoring system. One thing I noticed is that songs can still receive points for energy even when their genre or mood does not match. This showed me that the scoring system does not always recommend songs based on genre alone.
+When I compared High-Energy Pop and Chill Lofi, I noticed that they recommended different songs because their moods and energy levels were different. Deep Intense Rock focused more on intense and energetic songs compared with Chill Lofi. I also noticed that some songs appeared in different profiles because their energy levels were close to what the users preferred.
 ## 8. Future Work
 
 In the future, I would add more songs and genres. I would also include tempo, favorite artists, and listening history to improve the recommendations. I would like the program to learn from songs users like or skip.
