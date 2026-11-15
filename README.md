@@ -169,13 +169,8 @@ One thing I noticed is that some songs were recommended even when their genre di
 
 Summarize some limitations of your recommender.
 
-Examples:
+My music recommender only has 18 songs, so it cannot represent everyone's music taste. It also only uses genre, mood, and energy to score songs. Some genres have more songs than others, which can make recommendations less balanced. The program might also recommend similar songs repeatedly instead of introducing different types of music.
 
-- It only works on a tiny catalog
-- It does not understand lyrics or language
-- It might over favor one genre or mood
-
-You will go deeper on this in your model card.
 
 ---
 
@@ -185,10 +180,4 @@ Read and complete `model_card.md`:
 
 [**Model Card**](model_card.md)
 
-Write 1 to 2 paragraphs here about what you learned:
-
-- about how recommenders turn data into predictions
-- about where bias or unfairness could show up in systems like this
-
-
-
+I learned that music recommendation systems use information about songs and users to decide what to recommend. I was surprised that changing the scoring points could change the rankings. I also learned that recommendations are not always perfect because a small dataset or limited features can cause some songs to be overlooked. Using AI helped me build the program, but I still needed to test the results and check for problems.
